@@ -1,0 +1,23 @@
+[33mcommit b4d0e7a964e2a68faf888a147463db19c3de3db1[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Raul <raulparamo03@gmail.com>
+Date:   Mon Nov 15 14:28:53 2021 +0100
+
+    01 añado variable local
+
+[33mcommit 5d13f327a64173d959c1c1b2721c03576668fda3[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Miguel Bayón <miguel.bayon@iessanandres.com>
+Date:   Mon Oct 19 06:31:02 2020 +0200
+
+    Update MaquinaExpendedoraMejorada.java
+
+[33mcommit 09fcf30c6dd88d83110cb3c923c8d545ba3ba72c[m
+Author: Miguel Bayón <miguel.bayon@iessanandres.com>
+Date:   Sun Oct 18 19:31:55 2020 +0200
+
+    Correcciones menores
+
+[33mcommit d484dd006b46e49bff98847ca6709dac79d218a8[m
+Author: Miguel Bayon <miguel.bayon@iessanandres.com>
+Date:   Fri Oct 26 10:47:26 2018 +0200
+
+    Version mejorada de la maquina expendedora simple
