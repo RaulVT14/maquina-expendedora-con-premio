@@ -10,8 +10,7 @@ public class MaquinaExpendedoraMejorada {
     private String estacionOrigen;
     // El destino del billete
     private String estacionDestino;
-    // Dinero vaciado de la maquina
-    private int vaciarDineroDeLaMaquina;
+  
     
 
     /**
@@ -31,7 +30,12 @@ public class MaquinaExpendedoraMejorada {
      * Vacia todo el dinero de la maquina
      */
     public int vaciarDineroDeLaMaquina() {
-    return vaciarDineroDeLaMaquina = balanceClienteActual + totalDineroAcumulado;
+        int vaciarDineroDeLaMaquina;
+        vaciarDineroDeLaMaquina = balanceClienteActual + totalDineroAcumulado;
+        balanceClienteActual = 0;
+        totalDineroAcumulado = 0;
+        return vaciarDineroDeLaMaquina;
+        
     
     }
     /**
