@@ -32,11 +32,15 @@ public class MaquinaExpendedoraMejorada {
     public int vaciarDineroDeLaMaquina() {
         int vaciarDineroDeLaMaquina;
         vaciarDineroDeLaMaquina = balanceClienteActual + totalDineroAcumulado;
-        balanceClienteActual = 0;
-        totalDineroAcumulado = 0;
+        if (balanceClienteActual != 0) {
+            System.out.println("ERROR, hay una operación en curso");
+            
+        }
+        else {
+            totalDineroAcumulado = 0;
+            
+        }
         return vaciarDineroDeLaMaquina;
-        
-    
     }
     /**
      * Devuelve el precio del billete
