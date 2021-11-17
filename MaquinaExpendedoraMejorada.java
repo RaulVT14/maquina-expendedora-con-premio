@@ -10,6 +10,9 @@ public class MaquinaExpendedoraMejorada {
     private String estacionOrigen;
     // El destino del billete
     private String estacionDestino;
+    
+    
+
   
     
 
@@ -26,6 +29,26 @@ public class MaquinaExpendedoraMejorada {
         estacionDestino = destino;
     }
     
+    /**
+     * Devuelve el número de billetes vendidos 
+     * desde que se crea la máquina
+     */
+    public int getNumeroBilletesVendidos() {
+        int numeroBilletesVendidos;
+        numeroBilletesVendidos = totalDineroAcumulado/precioBillete;
+        return numeroBilletesVendidos;
+    }
+    
+    /**
+     * Imprime en pantalla el numero de billetes vendidos
+     * desde que se crea la máquina
+     */
+    public void imprimeNumeroBilletesVendidos() {
+        int numeroBilletesVendidos;
+        numeroBilletesVendidos = totalDineroAcumulado/precioBillete;
+        System.out.println("Se han vendido:" + numeroBilletesVendidos + "billetes");
+    
+    }
     /**
      * Vacia todo el dinero de la maquina
      */
