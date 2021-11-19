@@ -108,7 +108,7 @@ public class MaquinaExpendedoraMejorada {
             // Actualizar contador
             contadorDeBilletes = contadorDeBilletes + 1;
             if (maquinaConPremio == true) {
-                System.out.println("Tienes un 10% de descuento");
+                System.out.println("Tienes"  + (10 * precioBillete)/100  + "euros de descuento");
             }
         }
         else {
