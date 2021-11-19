@@ -32,8 +32,6 @@ public class MaquinaExpendedoraMejorada {
      * desde que se crea la máquina
      */
     public int getNumeroBilletesVendidos() {
-        int numeroBilletesVendidos;
-        numeroBilletesVendidos = contadorDeBilletes;
         return contadorDeBilletes;
     }
     
@@ -42,10 +40,7 @@ public class MaquinaExpendedoraMejorada {
      * desde que se crea la máquina
      */
     public void imprimeNumeroBilletesVendidos() {
-        int numeroBilletesVendidos;
-        numeroBilletesVendidos = contadorDeBilletes;
-        System.out.println("Se han vendido:" + numeroBilletesVendidos + "billetes");
-    
+        System.out.println("Se han vendido:" + contadorDeBilletes + "billetes");
     }
     /**
      * Vacia todo el dinero de la maquina
