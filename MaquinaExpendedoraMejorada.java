@@ -89,6 +89,7 @@ public class MaquinaExpendedoraMejorada {
         }
         if (billetesMaximos == 0) {
             System.out.println("No quedan billetes");
+            balanceClienteActual = 0;
         }
     }
 
@@ -120,11 +121,17 @@ public class MaquinaExpendedoraMejorada {
             }
             if (billetesMaximos == 0) {
                 System.out.println("No quedan billetes");
+
             }
         }
         else {
-            System.out.println("Necesitas introducir " + (cantidadDeDineroQueFalta) + " euros mas!");
+            if (billetesMaximos == 0) {
+                System.out.println("No quedan billetes");
 
+            }
+            else {
+                System.out.println("Necesitas introducir" + (cantidadDeDineroQueFalta) + "euros que faltan!");
+            }
 
         }            
     }
