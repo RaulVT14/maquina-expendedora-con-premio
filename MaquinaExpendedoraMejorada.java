@@ -117,15 +117,13 @@ public class MaquinaExpendedoraMejorada {
                 contadorDeBilletes = contadorDeBilletes + 1;
                 // Actualizar cantidad de billetes maximos
                 billetesMaximos = billetesMaximos - 1;
+                 if (maquinaConPremio == true) {
+                    System.out.println(" Tienes "  + (10 * precioBillete)/100  + " euros de descuento ");
+                }
             }
             else {
                 System.out.println("No quedan billetes");
             }
-            
-            if (maquinaConPremio == true) {
-                System.out.println("Tienes"  + (10 * precioBillete)/100  + "euros de descuento");
-            }
-            
         }
         else {
             if (billetesMaximos == 0) {
@@ -133,7 +131,7 @@ public class MaquinaExpendedoraMejorada {
 
             }
             else {
-                System.out.println("Necesitas introducir" + (cantidadDeDineroQueFalta) + "euros que faltan!");
+                System.out.println(" Necesitas introducir " + (cantidadDeDineroQueFalta) + " euros que faltan! ");
             }
 
         }            
